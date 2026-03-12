@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadSwap - Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">ReadSwap</h1>
+    <input id="search" type="text" placeholder="Search books by title or genre...">
+    <div class="profile">👤</div>
+  </header>
+
+  <div id="books"></div>
+
+  <section class="upload-section">
+    <h3>Add Your Book</h3>
+    <form>
+      <input type="text" name="title" placeholder="Book Title" required>
+      <input type="text" name="author" placeholder="Author">
+      <input type="number" name="price" placeholder="Price ($)" step="0.01">
+      <input type="text" name="genre" placeholder="Genre">
+      <input type="text" name="condition" placeholder="Condition (New/Good/Fair)">
+      <select name="type" required>
+        <option value="">Select Type</option>
+        <option value="sell">Sell</option>
+        <option value="exchange">Exchange</option>
+      </select>
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit">Add Book to Marketplace</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
